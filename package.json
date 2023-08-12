@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --exec babel-node server",
+    "migrate": "npx prisma migrate dev --preview-feature",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,7 +20,7 @@
   },
   "homepage": "https://github.com/MichaelYcCho/nstagram-be#readme",
   "dependencies": {
-    "@prisma/client": "5.1.1",
+    "@prisma/client": "^5.1.1",
     "apollo-server": "^3.12.0",
     "graphql": "^16.7.1"
   },
